@@ -1,0 +1,15 @@
+fastapi
+gradio
+numpy
+torch
+diffusers
+matplotlib
+torch
+torchvision
+tqdm
+transformers
+gdown
+ftfy
+accelerate
+IPython
+scipy
