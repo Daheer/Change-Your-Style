@@ -31,11 +31,11 @@ text_encoder = text_encoder.to(torch_device)
 unet = unet.to(torch_device)
 
 def download_models():
-    if not os.path.exists('models/vae.pt'): gdown.download(url = '', output = 'vae.pt')
-    if not os.path.exists('models/unet.pt'): gdown.download(url = '', output = 'unet.pt')
-    if not os.path.exists('models/scheduler.pt'): gdown.download(url = '', output = 'scheduler.pt')
-    if not os.path.exists('models/tokenizer.pt'): gdown.download(url = '', output = 'tokenizer.pt')
-    if not os.path.exists('models/text_encoder.pt'): gdown.download(url = '', output = 'text_encoder.pt')   
+    if not os.path.exists('models/vae.pt'): gdown.download(url = 'https://drive.google.com/uc?export=download&id=1-8lKYdUPfTJBFugGDrTSFp7gnUZp6bzf', output = 'vae.pt')
+    if not os.path.exists('models/unet.pt'): gdown.download(url = 'https://drive.google.com/uc?export=download&id=1-5jwxAlxiU-jusE1RtxD7tYovaRLNA24', output = 'unet.pt')
+    if not os.path.exists('models/scheduler.pt'): gdown.download(url = 'https://drive.google.com/uc?export=download&id=1-4YkdelUJ6IO6zi29rgK2Qy58On5XoiN', output = 'scheduler.pt')
+    if not os.path.exists('models/tokenizer.pt'): gdown.download(url = 'https://drive.google.com/uc?export=download&id=1-JAF0tIox6NOl99g7lQN7-04o3CmA7-V', output = 'tokenizer.pt')
+    if not os.path.exists('models/text_encoder.pt'): gdown.download(url = 'https://drive.google.com/uc?export=download&id=1-5WkmbyJztHXa4c-p_6g5Rq8ZzsZK3R6', output = 'text_encoder.pt')   
 
 def pil_to_latent(input_im):
     with torch.no_grad():

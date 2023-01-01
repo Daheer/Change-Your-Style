@@ -6,7 +6,6 @@ CUSTOM_PATH = "/change-your-style"
 
 app = FastAPI()
 
-
 @app.get("/")
 def read_main():
     return {"Status": "Working"}
@@ -21,5 +20,3 @@ str_step = gr.Slider(minimum = 10, maximum = 100, value = 25, step = 1)
 
 io = gr.Interface(generate, ["image", style, inf_steps, guidance, str_step], gr.Image())
 app = gr.mount_gradio_app(app, io, path=CUSTOM_PATH)
-io.launch()
-
