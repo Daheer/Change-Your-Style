@@ -11,7 +11,8 @@ def read_main():
     return {"Status": "Working"}
 
 def generate(Image, Style, Inference_Steps, Guidance, Start_Step):
-    return change_style(Image, Style, Inference_Steps, Guidance, Start_Step)
+    if Inference_Steps > Start_Step:
+        return change_style(Image, Style, Inference_Steps, Guidance, Start_Step) 
     
 style = gr.Radio(['GTA 5', 'Manga', 'Ghibli', 'Sims', 'Kaya Ghost Assasin', 'Arcane', 'Uzumaki'])
 inf_steps = gr.Slider(minimum = 10, maximum = 100, value = 50, step = 1)
