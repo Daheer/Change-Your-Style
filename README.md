@@ -1,5 +1,6 @@
 # Change-Your-Style
 > Change-Your-Style named after the popular Nigerian rhyme is a Stable Diffusion application that brings together the concept of Image to Image and Textual Inversion. It changes the concept/style of input images (preferrably portraits) to one of seven predefined styles. 
+> It uses a custom stable diffusion loop with an image as the starting point (input image) and a new 'learned' style embedding slipped into the embedding of a prompt - which acts now as just a placeholder actually. 
 
 # Model Architecture
 ### Stable Diffusion
