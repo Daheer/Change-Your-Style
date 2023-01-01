@@ -1,5 +1,5 @@
 # Change-Your-Style
-> Change-Your-Style named after the popular Nigerian rhyme is a Stable Diffusion application that brings together the concept of Image to Image and Textual Iversion. It changes the concept/style of input images (preferrably portraits) to one of seven predefined styles. 
+> Change-Your-Style named after the popular Nigerian rhyme is a Stable Diffusion application that brings together the concept of Image to Image and Textual Inversion. It changes the concept/style of input images (preferrably portraits) to one of seven predefined styles. 
 
 # Model Architecture
 ### Stable Diffusion
@@ -8,9 +8,9 @@
 
 Diagram from [here](https://arxiv.org/abs/2112.10752)
 
-### Textual Iversion
+### Textual Inversion
 
-<img src = 'images/textual_iversion.jpeg'>
+<img src = 'images/textual_inversion.jpeg'>
 
 Diagram from [here](https://textual-inversion.github.io/)
 
