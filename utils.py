@@ -55,11 +55,11 @@ def latents_to_pil(latents):
 def get_style(style):
     learned_emebeds_map = {
         'Ghibli': ['<ghibli-face>', 'ghibli'],
-        'Manga': ['<manga-style>', 'manga'],
+        'Manga': ['<manga>', 'manga'],
         'GTA 5': ['<gta5-artwork>', 'gta'],
-        'Sims': ['<sims-2-portrait>', 'sims'],
+        'Sims': ['<sims2-portrait>', 'sims'],
         'Kaya Ghost Assasin': ['<kaya-ghost-assasin>', 'kaya'],
-        'Uzumaki': ['<uzumaki>', 'uzumaki'],
+        'Uzumaki': ['<NARUTO>', 'uzumaki'],
         'Arcane': ['<arcane-style-jv>', 'arcane']
     }
     return learned_emebeds_map[style]
